@@ -72,6 +72,7 @@ namespace Stack.Controller
 			while (true)
 			{
 				bookView.ShowBooks(bookStat.GetCheckout());
+				//bookView.HowToExitApplication();
 				bookView.AddBook();
 			}
 		}

@@ -18,12 +18,16 @@ namespace Stack.View
 		public void BookMenu()
 		{
             Console.WriteLine("Please press the corresponding key to navigate the menu:\n" +
-				"(1) - Borrow books\n(2) - Check borrowed books\n");
+				"(1) - Borrow books\n(2) - Check borrowed books\n(0) - Exit application\n");
         }
 
 		public void AddBook()
 		{
             Console.WriteLine("Type the number of the book you you want to borrow:\n");
+        }
+		public void HowToExitApplication()
+		{
+            Console.WriteLine("Press 0 to exit the application.");
         }
 		public void AddMore()
 		{
