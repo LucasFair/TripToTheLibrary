@@ -9,13 +9,13 @@ namespace Stack.Model
 	internal class BookStatus
 	{
 
-		List<Book> onShelf  = new List<Book>();
+		List<Book> onShelf = new List<Book>();
 
 		Stack<Book> offShelf = new Stack<Book>();
 
 		public List<Book> GetCheckout()
 		{ return onShelf; }
-		public Stack<Book> GetReturn()
+		public Stack<Book> GetBorrow()
 		{ return offShelf; }
 
 		public void BookList()
@@ -27,14 +27,25 @@ namespace Stack.Model
 			onShelf.Add(new Book("Headache", "Ali, Lucas", 1867, 2, 4));
 		}
 
-		public void BorrowBook(Book onShelf)
+		public void BorrowBook(Book book)
 		{
-			offShelf.Push(onShelf);
+			offShelf.Push(book);
 		}
 
 		public void PeekAtBookStack()
 		{
 			offShelf.Peek();
 		}
+
+		public Book RemoveBookByIndex(byte bookIndex)
+		{
+			bookIndex -= 1;
+			var book = onShelf[bookIndex];
+			onShelf.RemoveAt(bookIndex);
+
+			return book;
+		}
+
+
 	}
 }
