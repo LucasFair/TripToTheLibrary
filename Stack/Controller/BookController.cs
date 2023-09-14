@@ -46,7 +46,7 @@ namespace Stack.Controller
 
 		public void CheckBorrowed()
 		{
-			//bookView.BorrowCheck(bookStat.GetBorrow());
+			bookView.ShowBorrowedBooks(bookStat.GetBorrow());
 			bookView.AddBook();
 
 			while (true)
