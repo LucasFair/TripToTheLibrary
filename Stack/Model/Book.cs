@@ -61,7 +61,7 @@ namespace Stack.Model
 		}
 		public Book(string title, string author, short yearRelease, byte revision, ushort idNum) : this(title, author, yearRelease, revision)
 		{
-			_idNum = IdNum;
+			_idNum = idNum;
 		}
 	}
 }

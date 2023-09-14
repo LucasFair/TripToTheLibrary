@@ -73,20 +73,38 @@ namespace Stack.Controller
 			{
 				bookView.ShowBooks(bookStat.GetCheckout());
 				//bookView.HowToExitApplication();
+				SelectBook();
 				bookView.AddBook();
+				BorrowMore();
 			}
+		}
+		public void BorrowMore()
+		{
+			bookView.AddMore();
+
+			var select = bookView.UserInput();
+
+			if (select != ConsoleKey.Backspace)
+				return;
+			else
+				MenuScreen();
 		}
 
 		public void SelectBook()
 		{
 			byte selectNum = 0;
 
-			while (true)
+			try
 			{
 				selectNum = bookView.ByteInput();
 				var book = bookStat.RemoveBookByIndex(selectNum);
 				bookStat.BorrowBook(book);
 			}
+			catch
+			{
+				bookView.InvalidInput();
+			}
+			return;
 		}
 	}
 }
