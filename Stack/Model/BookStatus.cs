@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Stack.Model
 {
-	internal class BookStatus
+	/// <summary>
+	/// Class <c>BookStatus</c> contains the data for the available books and the checked out books.
+	/// It also contains the book make-data, meaning, the added books, and takes into index and push to stack,
+	/// as well as peek, into account.
+	/// </summary>
+	public class BookStatus
 	{
 
 		List<Book> onShelf = new List<Book>();

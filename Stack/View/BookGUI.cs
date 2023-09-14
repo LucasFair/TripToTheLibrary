@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 
 namespace Stack.View
 {
-	internal class BookGUI
+	/// <summary>
+	/// Class <c>BookGUI</c> contains all the data that will be output to the console.
+	/// </summary>
+	public class BookGUI
 	{
 		public void Welcome()
 		{

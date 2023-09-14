@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Stack.Controller
 {
+	/// <summary>
+	/// Class <c>BookController</c> contains all the methods and inputs for the application.
+	/// </summary>
 	public class BookController
 	{
 		BookGUI bookView = new BookGUI();
@@ -90,7 +93,7 @@ namespace Stack.Controller
 				MenuScreen();
 		}
 
-		public void SelectBook()
+		public void SelectBook()  // If the input isn't valid, it will show an error message.
 		{
 			byte selectNum = 0;
 

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Stack.Model
 {
+	/// <summary>
+	/// Class <c>Book</c> contains the template for the books, and scaffolding.
+	/// </summary>
 	public class Book
 	{
 		private string _title;
