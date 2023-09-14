@@ -10,11 +10,11 @@ namespace Stack.Controller
 {
 	public class BookController
 	{
+		BookGUI bookGUI = new BookGUI();
+		BookStatus bookStat = new BookStatus();
 		public void Run()
 		{
-			BookGUI bookGUI = new BookGUI();
-			BookStatus bookStat = new BookStatus();
-
+			bookStat.BookList();
 			bookGUI.ShowBooks(bookStat.GetCheckout());
 		}
 	}

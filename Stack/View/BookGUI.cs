@@ -34,8 +34,9 @@ namespace Stack.View
 				Console.WriteLine("Title:\n{0}", book.Title);
 				Console.WriteLine("Author:\n{0}", book.Author);
 				Console.WriteLine("Year:\n{0}", book.YearRelease);
-				Console.WriteLine("Revision:\n{0}", book.Revision);
-			}
+				Console.WriteLine("Revision:\n{0}", book.Revision + "\n");
+                Console.WriteLine(string.Empty);
+            }
 		}
 
 		public ConsoleKey UserInput()

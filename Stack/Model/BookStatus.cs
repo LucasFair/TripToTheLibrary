@@ -26,5 +26,15 @@ namespace Stack.Model
 			onShelf.Add(new Book("The Stack is Rising - Overflowing", "Klik, Rune", 1994, 1, 3));
 			onShelf.Add(new Book("Headache", "Ali, Lucas", 1867, 2, 4));
 		}
+
+		public void BorrowBook(Book onShelf)
+		{
+			offShelf.Push(onShelf);
+		}
+
+		public void PeekAtBookStack()
+		{
+			offShelf.Peek();
+		}
 	}
 }
