@@ -1,0 +1,7 @@
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\bin\Debug\Stack.exe.config
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\bin\Debug\Stack.exe
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\bin\Debug\Stack.pdb
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\obj\Debug\Stack.csproj.AssemblyReference.cache
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\obj\Debug\Stack.csproj.CoreCompileInputs.cache
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\obj\Debug\Stack.exe
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\Stack\obj\Debug\Stack.pdb
